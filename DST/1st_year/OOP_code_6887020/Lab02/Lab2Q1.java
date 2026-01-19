@@ -16,11 +16,11 @@ public class Lab2Q1 {
     double sumWeight = 0;
     double sumHeight = 0;
     for (String i : weight) {
-      double w = (double) i;
+      double w = Double.parseDouble(i);
       sumWeight += w;
     }
     for (String i : height) {
-      double h = (double) i;
+      double h = Double.parseDouble(i);
       sumHeight += h;
     }
 
