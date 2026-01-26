@@ -3,11 +3,11 @@
 //Section: 1
 
 public class CovidProfile {
-  protected String date = "2020-01-18";
-  protected String location = "Thailand";
-  protected int accumulatedCases = 17023;
-  protected int cureCases = 11396;
-  protected int deathCases = 76;
+  private String date = "2020-01-18";
+  private String location = "Thailand";
+  private int accumulatedCases = 17023;
+  private int cureCases = 11396;
+  private int deathCases = 76;
 
   public CovidProfile() {
     this.date = "none";
