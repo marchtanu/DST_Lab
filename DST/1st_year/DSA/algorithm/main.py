@@ -117,7 +117,7 @@ if __name__ == "__main__":
   print("=== TIME COMPLEXITY EXAMPLES ===")
   print(f"First element: {get_first_element(test_arr)} - O(1)")
   print(f"Linear search: {linear_search(test_arr, 25)} - O(n)")
-  print(f"Bubble sort: {bubble_sort(test_arr.copy())} - O(n²)")
+  print(f"Bubble sort: {bubble_sort(test_arr.copy())} - O(n**2)")
   print(f"Binary search: {binary_search(sorted_arr, 25)} - O(log n)")
   print(f"Merge sort: {merge_sort(test_arr.copy())} - O(n log n)")
   
@@ -128,4 +128,4 @@ if __name__ == "__main__":
   _, ms_time = measure_time(merge_sort, large_arr.copy())
   print(f"Bubble Sort (1000 elements): {bs_time:.6f}s")
   print(f"Merge Sort (1000 elements): {ms_time:.6f}s")
-  print(f"Merge Sort is {bs_time/ms_time:.1f}x faster")
+  # print(f"Merge Sort is {bs_time/ms_time:.1f}x faster")

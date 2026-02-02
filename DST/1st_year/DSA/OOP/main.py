@@ -214,4 +214,4 @@ print(temp.celsius)  # 25
 temp.celsius = 30  # Uses setter
 
 
-print("\n✓ OOP concepts covered!")
+print("\n OOP concepts covered!")
