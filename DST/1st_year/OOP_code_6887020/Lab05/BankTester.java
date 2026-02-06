@@ -1,3 +1,6 @@
+//Name: Tanuphat Sojindamanee
+//ID: 6887020
+//Section: 1
 public class BankTester {
 
   public static void main(String[] args) {
@@ -18,18 +21,11 @@ public class BankTester {
         { "8907", "6013.09" }, { "3901", "3258.63" }, { "4154", "3350.78" }, { "7137", "7258.45" },
         { "5421", "1521.13" }, { "9825", "8048.61" }, { "1969", "1044.59" }, { "6900", "71.25" }, { "7155", "9441.66" }
     };
-    String[][] SCBacc = {
-        { "1228", "5067.15" }, { "3185", "9949.83" }, { "6377", "3953.06" }, { "7667", "4899.44" },
-    };
 
     // initialize bank accounts
     Bank bangkokbank = new Bank();
     for (String[] acc : accountsStr) {
       bangkokbank.addAccount(new BankAccount(Integer.parseInt(acc[0]), Double.parseDouble(acc[1])));
-    }
-     Bank SCB = new Bank();
-    for (String[] acc : SCBacc) {
-      SCB.addAccount(new BankAccount(Integer.parseInt(acc[0]), Double.parseDouble(acc[1])));
     }
     System.out.println("bangkokBank");
     System.out.printf("Total balance: %.2f\n", bangkokbank.getTotalBalance());
@@ -37,14 +33,21 @@ public class BankTester {
     System.out.println("Account number with the highest balance: " + bangkokbank.getMax().getAccountNumber());
     System.out.println("Account number with having balance at least 5000: " + bangkokbank.countBalanceAtLeast(5000));
     System.out.println("Balance of matching account: " + bangkokbank.find(2810).getBalance());
-    
+    // Put your Challenge code here and explain to LA
+    String[][] SCBacc = {
+        { "1228", "5067.15" }, { "3185", "9949.83" }, { "6377", "3953.06" }, { "7667", "4899.44" },
+    };
+    Bank SCB = new Bank();
+    for (String[] acc : SCBacc) {
+      SCB.addAccount(new BankAccount(Integer.parseInt(acc[0]), Double.parseDouble(acc[1])));
+    }
+
     System.out.println("SCB");
     System.out.printf("Total balance: %.2f\n", SCB.getTotalBalance());
     System.out.println("Account number with the smallest balance: " + SCB.getMin().getAccountNumber());
     System.out.println("Account number with the highest balance: " + SCB.getMax().getAccountNumber());
     System.out.println("Account number with having balance at least 5000: " + SCB.countBalanceAtLeast(5000));
     System.out.println("Balance of matching account: " + SCB.find(2810).getBalance());
-    // Put your Challenge code here and explain to LA
 
   }
 

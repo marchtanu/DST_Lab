@@ -11,7 +11,7 @@ ez_matrix = [
     [0,0,0]
 ]
 
-
+# Bad example
 def countM(n):
     _x = range(len(n[0]))
     _y = range(len(n))
