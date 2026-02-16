@@ -1,3 +1,6 @@
+//Name: Tanuphat Sojindamanee
+//ID: 6887020
+//Section: 1
 public class MyDate {
   public int year;
   public int month;
