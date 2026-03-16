@@ -4,25 +4,29 @@ public class Rectangle extends Shape{
 
     public Rectangle(){
         super();
-        this('','');
+        this.length = 0;
+        this.width =0;
     }
 
     public Rectangle(String color,double length,double width){
         super(color);
-        this(length,width);
+        this.length = length;
+        this.width = width;
     }
 
-    @Override();
+    @Override
     public double getArea(){
         return this.length * this.width;
     }
 
     public double getArea(double length, double width){
-        return length * width;
+        this.length = length;
+        this.width = width;
+        return getArea();
     }
-    @Override();
+    @Override
     public String toString(){
-        return 'Rectangle[length='+this.length+', width='+this.width+',Shape[color='+super.getColor()+']]'
+        return "Rectangle[length="+this.length+", width="+this.width+",Shape[color="+super.getColor()+"]]";
     }
 
 

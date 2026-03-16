@@ -24,5 +24,17 @@ public class ShapeTester {
 	      System.out.println("--Test overload method--");
 	      System.out.println("Area is " + s5.getArea(5.0, 10.0));  // Run Triangle's getArea()
 	      System.out.println(s5);  // Run Triangle's toString()
+
+		  // Bonus Challenge
+		  Square s6 = new Square("blue", 5);
+		  System.out.println("--Test Square--");
+		  System.out.println(s6);
+		  System.out.println("Area is "+ s6.getArea());
+
+		  Square s7 = new Square();
+		  s7.setColor("pink");
+		  System.out.println("Area is "+ s7.getArea(8));
+		  System.out.println(s7);
+
 	   }
 	}

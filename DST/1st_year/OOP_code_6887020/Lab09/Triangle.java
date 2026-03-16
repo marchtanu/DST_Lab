@@ -3,24 +3,28 @@ public class Triangle extends Shape {
     private double height;
     public Triangle(){
         super();
-        this('','');
+        this.base = 0;
+        this.height = 0;
 
     }
     public Triangle(String color, double base, double height){
         super(color);
-        this(base, height);
+        this.base = base;
+        this.height = height;
 
     }
-    @Override();
+    @Override
     public double getArea(){
         return 0.5 * this.base * this.height;
     }
     public double getArea(double base, double height){
-        return 0.5 * base * height;
+        this.base = base;
+        this.height = height;
+        return getArea();
     }
     
-    @Override();
+    @Override
     public String toString(){
-        return 'Triangle[base='+ this.base + ',height='+ this.height + ',Shape[color='+super.getColor()+']]'
+        return "Triangle[base="+ this.base + ",height="+ this.height + ",Shape[color="+super.getColor()+"]]";
     }
 }

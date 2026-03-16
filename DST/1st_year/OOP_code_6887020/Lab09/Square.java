@@ -3,24 +3,25 @@ public class Square extends Shape {
 
     public Square(){
         super();
-        this('');
+        this.side = 0;
     }
-    public Sqaure(String color, double side){
+    public Square(String color, double side){
         super(color);
-        this(side);
+        this.side = side;
     }
 
-    @Override();
+    @Override
     public double getArea(){
-        return this.side * this.side 
+        return this.side * this.side;
     }
 
     public double getArea(double side){
-        return side * side;
+        this.side = side;
+        return getArea();
     }
 
-    @Override();
+    @Override
     public String toString(){
-        return 'Rectangle[side='+this.side+',Shape[color='+super.getColor()+']]'
+        return "Square[side="+this.side+",Shape[color="+super.getColor()+"]]";
     }
 }
