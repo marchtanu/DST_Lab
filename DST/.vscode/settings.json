@@ -1,0 +1,7 @@
+{
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar",
+    "1st_year/OOP_code_6887020/Lab12-student-package/student-package/commons-csv-1.10.0.jar",
+    "1st_year/OOP_code_6887020/Lab12-student-package/student-package/gson-2.10.1.jar"
+  ]
+}
