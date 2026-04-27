@@ -83,6 +83,11 @@ public class MovieCatalog {
 	public static void saveMoviesJSON(List<Movie> movieList, String outFilename) {
 		// ********************* YOUR CODE HERE **************************//
 		Gson gson = new Gson();
+		try {
+			gson.toJson(movieList, new FileWriter("D:\\Desktop\\Code\\university\\DST\\1st_year\\OOP_code_6887020\\Lab12-student-package\\"+outFilename));
+		} catch (IOException e) {
+			System.err.println("Error writing JSON file: " + outFilename);
+		}
 		try (BufferedWriter writer = new BufferedWriter(new FileWriter("D:\\Desktop\\Code\\university\\DST\\1st_year\\OOP_code_6887020\\Lab12-student-package\\"+outFilename))) {
 			gson.toJson(movieList, writer);
 		} catch (IOException e) {
